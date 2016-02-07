@@ -1,0 +1,47 @@
+Universe = vanilla
+Executable = run.bat
+
+#getenv = true
+
+output = des.output.$(Process)
+transfer_input_files = cipher.json, php.zip, hallo.php, unzip.exe
+#transfer_output_files = out.txt
+
+should_transfer_files = YES
+when_to_transfer_output = ON_EXIT
+
+Requirements = (Arch == "INTEL" && OpSys == "WINDOWS") || (Arch == "X86_64" && OpSys == "WINDOWS") 
+
+
+
+
+Arguments = 00000000000058C0 16
+Queue
+
+Arguments = 00000000000058D0 16
+Queue
+
+Arguments = 00000000000058E0 16
+Queue
+
+Arguments = 00000000000058F0 16
+Queue
+
+Arguments = 0000000000005900 16
+Queue
+
+Arguments = 0000000000005910 16
+Queue
+
+Arguments = 0000000000005920 16
+Queue
+
+Arguments = 0000000000005930 16
+Queue
+
+Arguments = 0000000000005940 16
+Queue
+
+Arguments = 0000000000005950 16
+Queue
+
